@@ -25,12 +25,49 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header class="header-container">
-			<div class="logo-img">
-				<img src="images/logo.png" alt="Logo" />
-			</div>
-			<nav>
-				<ul>
+		<div style="position: relative;">
+			<header class="header-container">
+				<div class="logo-img">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Gallery</a></li>
+						<li><a href="">Sevices</a></li>
+						<li><a href="">Testimonials</a></li>
+						<li><a href="">Clients</a></li>
+						<li><a href="">Pricing</a></li>
+					</ul>
+				</nav>
+				<ul class="social-header">
+					<li>
+						<a href=""><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa-brands fa-twitter"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa-brands fa-behance"></i></a>
+					</li>
+					<li id="menu-btn" class="" >
+						<a onclick=showMenu() href="#"><i class="fa fa-bars is-visible"></i></a>
+					</li>
+					<li>
+						<a onclick=showMenu() href="#"><i class="fa-solid fa-xmark"></i></a>
+					</li>
+				</ul>
+			</header>
+			
+			
+				<ul id="menu-bar">
 					<li><a href="">Home</a></li>
 					<li><a href="">About</a></li>
 					<li><a href="">Gallery</a></li>
@@ -39,27 +76,7 @@
 					<li><a href="">Clients</a></li>
 					<li><a href="">Pricing</a></li>
 				</ul>
-			</nav>
-			<ul class="social-header">
-				<li>
-					<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-				</li>
-				<li>
-					<a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-				</li>
-				<li>
-					<a href=""><i class="fa-brands fa-twitter"></i></a>
-				</li>
-				<li>
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-				</li>
-				<li>
-					<a href=""><i class="fa-brands fa-behance"></i></a>
-				</li>
-				<li class="is-visible" onclick=showMenu()>
-					<a href="#"><i class="fa fa-bars"></i></a>
-				</li>
-			</ul>
-		</header>
+		</div>
+		
 	</body>
 </html>
