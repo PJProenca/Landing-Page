@@ -1,14 +1,19 @@
 function showMenu() {
 	var ele = document.getElementById("menu-bar");
-	var btn = document.getElementById("menu-btn ");
-	if (btn.className !=='is-active'){
+	var open = document.getElementById("menu-btn");
+	var close = document.getElementById("close-btn");
+		open.style.display = "none";	
+		close.style.display = "block";
 		ele.style.top ='70px';
 		ele.style.opacity = '1';
-		btn.classList.add("is-active");
-	}
-	if (btn.className ==='is-active'){
+}
+
+ function hideMenu(){
+	var ele = document.getElementById("menu-bar");
+	var open = document.getElementById("menu-btn");
+	var close = document.getElementById("close-btn");
+		open.style.display = "block";	
+		close.style.display = "none";
 		ele.style.top ='-200px';
 		ele.style.opacity = '0';
-		btn.classList.remove("is-active");
-	}
 }

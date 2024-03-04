@@ -20,8 +20,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<!-- external Js-->
-		<script src="js/index.js"></script>
+
 	</head>
 	<body>
 		<!-- Header -->
@@ -57,12 +56,11 @@
 					<li>
 						<a href=""><i class="fa-brands fa-behance"></i></a>
 					</li>
-					<li id="menu-btn" class="" >
-						<a onclick=showMenu() href="#"><i class="fa fa-bars is-visible"></i></a>
+					<li   >
+						<a id="menu-btn" onclick=showMenu() href="#"><i class="fa fa-bars is-visible"></i></a>
+						<a id="close-btn" onclick=hideMenu()  href="#"><i class="fa-solid fa-xmark"></i></a>
 					</li>
-					<li>
-						<a onclick=showMenu() href="#"><i class="fa-solid fa-xmark"></i></a>
-					</li>
+		
 				</ul>
 			</header>
 			
@@ -77,6 +75,7 @@
 					<li><a href="">Pricing</a></li>
 				</ul>
 		</div>
-		
+				<!-- external Js-->
+				<script src="js/index.js"></script>
 	</body>
 </html>

@@ -85,6 +85,7 @@ ul a {
 }
 
 
+
 #menu-bar{
 	display: block;
 	width: 100%;
@@ -105,7 +106,7 @@ ul a {
 }
 /*? media Queries   */
 
-@media(max-width:950px){
+@media(max-width:1025px){
 	.is-visible{
 		display: block!important;
 	}
@@ -120,8 +121,8 @@ ul a {
 	} */
 }
 
-.close-btn{
-	
+#close-btn{
+	display: none;
 }
 
 @media(max-width:480px){
