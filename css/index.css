@@ -46,12 +46,28 @@ body {
 }
 .header-container > nav a {
 	transition-duration: 1s;
+	display: flex;
+	align-items: end;
 }
 
-.header-container > nav a:hover,
-.header-container > nav a:active {
+.header-container > nav li {
+	height: 48px;
+	display: flex;
+	align-items: center;
+}
+
+.header-container > nav a:hover {
 	color: #d2b356;
 	transition-duration: 0.5s;
+}
+
+.active {
+	color: #d2b356;
+	border-bottom: 2px solid #d2b356;
+}
+
+.active a {
+	color: #d2b356;
 }
 
 ul {
@@ -60,6 +76,7 @@ ul {
 	align-items: center;
 	text-transform: uppercase;
 }
+
 ul li {
 	margin-right: 15px;
 	font-size: 0.7rem !important;
@@ -135,8 +152,14 @@ ul a {
 
 .menu-btn {
 	display: none;
+	color: rgb(171, 167, 167);
+	transition-duration: 1s;
 }
 
+.menu-btn:hover {
+	color: rgb(1, 1, 1);
+	transition-duration: 0.5s;
+}
 /*? media Queries   */
 
 @media (max-width: 1025px) {
