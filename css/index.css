@@ -13,20 +13,31 @@ body {
 	font-weight: normal;
 	color: #111;
 	background-color: #fff;
+}
+
+.top-container {
 	position: relative;
+	background: url("/images/banner-image-1.jpg") no-repeat top center;
+	background-size: cover;
+	height: 780px;
+}
+.menu-bar-container {
+	position: fixed;
+	width: 100%;
 }
 
 .header-container {
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 	height: 80px;
-	border-bottom:1px solid rgb(228, 226, 226);
+	border-bottom: 1px solid rgb(228, 226, 226);
 	padding: 0 55px;
 	z-index: 999;
-	position: sticky !important;
-	position: relative;
+	position: fixed;
 	top: 0;
 	background-color: #fff;
+	box-shadow: 1px 2px 2px 1px rgba(164, 163, 163, 0.9);
 }
 
 .header-container > nav {
@@ -80,54 +91,66 @@ ul a {
 	height: 1.1rem;
 }
 
-.is-visible {
+.menu-bar {
 	display: none;
-}
-
-
-
-#menu-bar{
-	display: block;
 	width: 100%;
+	height: 0;
 	position: absolute;
-	top: -200px;
-	opacity: 0;
-	padding: 8px 8px 0 8px;	
+	top: 74px;
+	padding: 8px 8px 0 8px;
 	box-shadow: 1px 2px 2px 1px rgba(164, 163, 163, 0.9);
-	transition-duration: 0.8s;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	overflow: hidden;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-#menu-bar li{
+.menu-bar.open {
+	display: block;
+	height: fit-content;
+}
+.menu-bar li {
 	height: 1.4rem;
-	border-top:1px solid rgb(228, 226, 226);
+	border-top: 1px solid rgb(228, 226, 226);
 	display: flex;
 	align-items: center;
 	width: 100%;
 }
-/*? media Queries   */
 
-@media(max-width:1025px){
-	.is-visible{
-		display: block!important;
-	}
-
-	nav ul{
-		display: none;
-	}
-
-	/* #menu-bar{
-		top: 70px;
-		opacity: 1;
-	} */
+.menu-bar a {
+	transition-duration: 1s;
+}
+.menu-bar a:hover {
+	color: #d2b356;
+	transition-duration: 0.5s;
 }
 
-#close-btn{
+.menu-bar li {
+	transition-duration: 1s;
+}
+.menu-bar li:hover {
+	background-color: rgba(236, 232, 232, 0.715);
+	transition-duration: 0.5s;
+}
+
+.menu-btn {
 	display: none;
 }
 
-@media(max-width:480px){
-	.social-header li {
+/*? media Queries   */
+
+@media (max-width: 1025px) {
+	.menu-btn {
+		display: block;
+	}
+
+	nav ul {
 		display: none;
 	}
 }
 
+@media (max-width: 480px) {
+	.social-header li a {
+		display: none;
+	}
+}
