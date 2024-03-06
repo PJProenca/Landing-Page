@@ -164,6 +164,7 @@ ul a {
 	height: 780px;
 	margin-top: 85px !important;
 	margin-bottom: 40px;
+	display: block !important;
 }
 
 .banner-content {
@@ -214,9 +215,7 @@ ul a {
 	padding: 11px 18px;
 	transition: all 1s linear;
 }
-.row {
-	display: block !important;
-}
+
 .button:hover {
 	color: #d2b356;
 	border: #d2b356 2px solid;
@@ -224,16 +223,42 @@ ul a {
 	margin-top: 20px;
 }
 
+.banner-btn-wrap {
+	padding-top: 60px;
+}
 .width-constraint {
 	padding: 0 80px;
 }
 
-.section-heading {
+.section-heading h1 {
 	font-size: 14px;
 	font-weight: bold;
 	color: #ccc;
 	letter-spacing: 2px;
 	padding-bottom: 0;
+}
+
+.section-title h2 {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 34px;
+	font-weight: 700;
+	color: #111;
+}
+
+h2.section-title::after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	background-color: #d2b356;
+	margin-top: 20px;
+}
+
+.section-subtitle {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 16px;
+	font-weight: 300;
+	color: #9c9c9c;
 }
 
 /*? media Queries   */
