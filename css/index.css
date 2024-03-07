@@ -13,6 +13,7 @@ body {
 	font-weight: normal;
 	color: #111;
 	background-color: #fff;
+	overflow-x: hidden;
 }
 
 .menu-bar-container {
@@ -230,7 +231,7 @@ ul a {
 	padding: 0 80px;
 }
 
-.section-heading h1 {
+h3.section-heading {
 	font-size: 14px;
 	font-weight: bold;
 	color: #ccc;
@@ -238,7 +239,7 @@ ul a {
 	padding-bottom: 0;
 }
 
-.section-title h2 {
+h2.section-title {
 	font-family: "Open Sans", sans-serif, Arial, Helvetica;
 	font-size: 34px;
 	font-weight: 700;
@@ -251,7 +252,8 @@ h2.section-title::after {
 	width: 30px;
 	height: 5px;
 	background-color: #d2b356;
-	margin-top: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .section-subtitle {
@@ -259,6 +261,23 @@ h2.section-title::after {
 	font-size: 16px;
 	font-weight: 300;
 	color: #9c9c9c;
+}
+
+.about-right-row {
+	justify-content: center;
+	margin-bottom: 45px;
+}
+
+.icon {
+	color: #d2b356;
+}
+.icon-description {
+	padding-top: 25px;
+}
+
+h4.section-title {
+	font-weight: bold;
+	font-size: 18px;
 }
 
 /*? media Queries   */
@@ -286,5 +305,14 @@ h2.section-title::after {
 @media (max-width: 500px) {
 	.top-container {
 		height: 150vh;
+	}
+}
+
+@media (max-width: 766px) {
+	.about-bt-pad {
+		padding-bottom: 50px;
+	}
+	.width-constraint {
+		padding: 0 20px 0 80px;
 	}
 }
