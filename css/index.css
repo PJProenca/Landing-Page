@@ -225,7 +225,7 @@ ul a {
 }
 
 .banner-btn-wrap {
-	padding-top: 60px;
+	padding-top: 40px;
 }
 .width-constraint {
 	padding: 0 80px;
@@ -315,4 +315,56 @@ h4.section-title {
 	.width-constraint {
 		padding: 0 20px 0 80px;
 	}
+}
+#gallery {
+	padding-top: 30px;
+}
+#gallery a {
+	position: relative;
+}
+
+#gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition-duration: 0.8s;
+	text-align: center;
+}
+
+#gallery img:hover {
+	opacity: 0.1;
+	transition-duration: 0.2s;
+}
+
+#gallery a::before {
+	position: absolute;
+	top: 50%;
+	right: 40%;
+	display: block;
+	content: "+";
+	font-size: 50px;
+	color: #d2b356;
+	width: 70px;
+	height: 70px;
+	/* opacity: 0; */
+}
+
+#gallery a::before {
+	position: absolute;
+	top: 35%;
+	right: 40%;
+	display: block;
+	content: "+";
+	font-size: 40px;
+
+	color: #d2b356;
+	width: 70px;
+	height: 70px;
+	opacity: 0;
+	transition-duration: 1.2s;
+}
+
+#gallery a:hover::before {
+	opacity: 1;
+	transition-duration: 0.8s;
 }
